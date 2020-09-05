@@ -34,7 +34,7 @@ def _list_sheets():
 
 def main(args=None):
     parser = argparse.ArgumentParser()
-    parser.add_argument('cheat_name', help='name of a cheat sheet')
+    parser.add_argument('cheat_name', help='name of a cheat sheet (put list to display cheetsheets)')
     args = parser.parse_args()
     if args.cheat_name == 'list':
         _list_sheets()
